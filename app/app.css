@@ -13,3 +13,73 @@ body {
     color-scheme: dark;
   }
 }
+.start-button {
+  @apply bg-blue-500 text-white;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, ring 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+.stop-button {
+  @apply bg-red-500 text-white;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, ring 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.reset-button {
+  @apply bg-gray-500 text-white;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, ring 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+.reset-button:hover {
+  @apply bg-gray-600;
+}
+.reset-button:focus {
+  @apply ring-2 ring-gray-500;
+}
+.time-input {
+  width: 505px;
+  height: 505px;
+  border-color: rgb(93, 14, 14);
+  font-size: 300px;
+  font-weight: 900;
+  align-items: center;
+  text-align: center;
+}
+.time-input:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px; /* thickness of the border */
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(206, 224, 228) 50%, rgb(16, 98, 47) 50%);
+}
+.clock {
+  display: flex;
+  height: 600px;
+  flex-direction: row;
+  align-items:flex-start
+}
